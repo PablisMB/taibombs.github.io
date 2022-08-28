@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none; }
+li{ font-size: 1.25em; }
+
+
+button{
+    border: 2x solid rgba(0,0,0,0,5);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #5EFB80;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #81f79a;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.color-acc{
+    color: #5EFB80;
+}
+
+.color-ac{
+    color: #5efb80a4;
+}
+
+.color-ac:hover{
+    color: #5EFB80;
+}
+
+header{
+    background-color: rgb(240, 240, 240);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #5EFB80;
+    font-size: 1.80em; 
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+header a:hover{
+    color: #5EFB80;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/calob2.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#soyunpalo .container{
+    text-align: center;
+    padding: 200px 10px;
+}
+
+#mis-proyectos {
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+#mis-proyectos .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#mis-proyectos h2{
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+#mis-proyectos p{
+    display: none;
+}
+
+#mis-proyectos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    color: rgba(255, 250, 250, 0.479)
+}
+
+#mis-proyectos .carta:hover{
+    color: rgb(255, 250, 250);
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/calvorco.PNG");
+     
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/taibombs.PNG");
+ 
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/osu.PNG");
+}
+
+#logros .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#logros li{
+    margin: 16px 0px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#contacta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgba(30,30,30);
+    color: white;
+}
+
+#contacto button{
+    font-size: 1.75em;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #soyunpalo .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #soyunpalo .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #soyunpalo h2{
+        margin: 0;
+    }
+
+    #soyunpalo .img-container{
+        background-image: url("fotos/palo.png");
+         background-size: cover;
+         background-position: center center;
+         height: 500px;
+         width: 400px;
+    }
+    
+    #mis-proyectos .proyectos{
+        justify-content: center;
+    }
+ 
+
+    #mis-proyectos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mis-proyectos h3{
+        margin-top: 0px;
+    }
+
+    #mis-proyectos .carta{
+        padding: 15px;
+    }
+
+    #logros{
+        background-image: url("fotos/soyyo.PNG");
+        background-repeat: no-repeat;
+        background-size: 300px 150px;
+        background-position: 650px 175px;
+    }
+
+    #logros .container{
+        text-align: left;
+    }
+
+    #logros h2{
+        margin-left: 50px;
+    }
+
+    #logros ul{
+        margin-left: 10px;
+        font-size: 0.85em;
+    }
+
+    #contacta button{
+        font-size: 1.75em;
+    }
+
+}
+
+@media (min-width: 1024px){
+    #logros{
+        background-position-x: calc(100vh + 150px);
+    }
+}
