@@ -103,7 +103,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-     ,url("fotos/calob2.jpg");
+     ,url("./calob2.jpg");
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center;
@@ -160,7 +160,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-     ,url("fotos/calvorco.PNG");
+     ,url("./calvorco.PNG");
      
 }
 
@@ -170,7 +170,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-     ,url("fotos/taibombs.PNG");
+     ,url("./taibombs.PNG");
  
 }
 
@@ -180,7 +180,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-     ,url("fotos/osu.PNG");
+     ,url("./osu.PNG");
 }
 
 #logros .container{
@@ -267,7 +267,7 @@ footer .container{
     }
 
     #soyunpalo .img-container{
-        background-image: url("fotos/palo.png");
+        background-image: url("./palo.png");
          background-size: cover;
          background-position: center center;
          height: 500px;
@@ -293,7 +293,7 @@ footer .container{
     }
 
     #logros{
-        background-image: url("fotos/soyyo.PNG");
+        background-image: url("./soyyo.PNG");
         background-repeat: no-repeat;
         background-size: 300px 150px;
         background-position: 650px 175px;
